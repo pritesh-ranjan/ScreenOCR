@@ -24,9 +24,10 @@ class MainGui(QWidget):
         self.edit_box.hide()
         self.v_box.addWidget(self.edit_box)
         self.setLayout(self.v_box)
+        # self.set_window_properties()
 
     def set_window_properties(self):
-        self.setWindowFlags(Qt.CustomizeWindowHint | Qt.Tool)
+        self.setWindowFlags(Qt.CustomizeWindowHint)
 
     def mousePressEvent(self, eventQMouseEvent):
         self.originQPoint = eventQMouseEvent.pos()
