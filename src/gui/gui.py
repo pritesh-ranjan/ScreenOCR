@@ -26,7 +26,7 @@ class MainGui(QWidget):
         self.setLayout(self.v_box)
 
     def set_window_properties(self):
-        self.setWindowFlags(Qt.CustomizeWindowHint | Qt.FramelessWindowHint | Qt.Tool)
+        self.setWindowFlags(Qt.CustomizeWindowHint | Qt.Tool)
 
     def mousePressEvent(self, eventQMouseEvent):
         self.originQPoint = eventQMouseEvent.pos()
